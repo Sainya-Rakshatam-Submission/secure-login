@@ -36,3 +36,11 @@ To create a superuser for the site type the following command in the sole
 python manage.py createsuperuser
 ```
 after running the command provide the necessary details it asks
+
+### 6. Compress the static files
+To compress the static files then type the following command in the console
+```console
+python manage.py collectcompress
+```
+
+
