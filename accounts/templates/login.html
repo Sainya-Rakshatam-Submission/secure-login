@@ -77,8 +77,7 @@
 
             {% for field in form %}
             <div class="form-floating">
-                {{ field }}
-                <label for="floatingInput">Email address</label>
+                {{ field }} {{ field.label_tag }}
             </div>
             {% endfor %}
             <input type="hidden" name="next" value="{{ next_url }}" />
