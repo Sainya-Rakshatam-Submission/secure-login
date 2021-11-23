@@ -30,5 +30,9 @@ Now in console type the following command
 ```console
 python manage.py migrate
 ```
-
-
+### 5. Create a superuser for the site
+To create a superuser for the site type the following command in the sole
+```console
+python manage.py createsuperuser
+```
+after running the command provide the necessary details it asks
