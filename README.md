@@ -66,7 +66,7 @@ Make sure to edit the `CORS` and `ALLOWED_HOST` header, otherwise you won't be a
 ### 8. Edit the THROTTLING REQUESTS bumber
 Make sure to edit the `AXES_FAILURE_LIMIT` confiiguration, this is the max number of failed login attempts, Defaults to 5. [Click here to goto the THROTTLING REQUESTS configuration](https://github.com/Sainya-Ranakshetram-Submission/secure-login/blob/master/securelogin/settings.py#L215)
 
-### 8. Now run the project
+### 9. Now run the project
 For the `windows` users, run the following command
 ```console
 python manage.py runserver
