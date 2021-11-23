@@ -1,5 +1,12 @@
 # Secure Login Challenge
 This project addresses all the web vulnerabilities and implements login system in a secure way
+
+**Web vulnerabilities addressed**
+- Cross Site Forgery Request
+- Clickjacking
+- Sql Injection
+- XSS Injection
+
 ## **Hosting Guide**
 
 ### 1. Download the code
