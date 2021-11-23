@@ -43,4 +43,14 @@ To compress the static files then type the following command in the console
 python manage.py collectcompress
 ```
 
+### 7. Now run the project
+For the `windows` users, type the following command
+```console
+python manage.py runserver
+```
+
+and for the `Linux` and `Mac` users, type the following command
+```python
+gunicorn securelogin.asgi:application -k securelogin.workers.DynamicUvicornWorker --timeout 500
+```
 
