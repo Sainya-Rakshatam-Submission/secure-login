@@ -15,6 +15,7 @@ Install `python-3.9` in the system, then type the following command in the conso
 pip install virtualenv
 virtualenv env
 env/scripts/activate
+pip install -r requirements.txt
 ```
 Now rename `example.env` to `.env` and now see this video on how to setup the `.env` file.
 
