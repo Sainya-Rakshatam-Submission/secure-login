@@ -24,7 +24,7 @@ cd secure-login
 ```
 
 ### 2. Setup the Virtual Environment
-Install `python-3.9` in the system, then type the following command in the console
+Install `python-3.9` in the system, then run the following command in the console
 ```console
 pip install virtualenv
 virtualenv env
@@ -41,19 +41,19 @@ If you are in `LOCAL` environment then no need to install the database connector
 [Click here for the video explanation](https://youtu.be/6iw5sA89gMo)
 
 ### 4. Migrate the sql queries to the database
-Now in console type the following command
+Now in console run the following command
 ```console
 python manage.py migrate
 ```
 ### 5. Create a superuser for the site
-To create a superuser for the site type the following command in the sole
+To create a superuser for the site run the following commands line by line in the sole
 ```console
 python manage.py createsuperuser
 ```
 after running the command provide the necessary details it asks
 
 ### 6. Compress the static files
-To compress the static files then type the following command in the console
+To compress the static files then run the following command in the console
 ```console
 python manage.py collectcompress
 ```
@@ -62,12 +62,12 @@ python manage.py collectcompress
 Make sure to edit the `CORS` and `ALLOWED_HOST` header, otherwise you won't be able to access the site from the desired attched domain. [Click here to goto the CORS and ALLOWED_HOST header](https://github.com/Sainya-Rakshatam-Submission/secure-login/blob/master/securelogin/settings.py#L172)
 
 ### 8. Now run the project
-For the `windows` users, type the following command
+For the `windows` users, run the following command
 ```console
 python manage.py runserver
 ```
 
-and for the `Linux` and `Mac` users, type the following command
+and for the `Linux` and `Mac` users, run the following command
 ```console
 gunicorn securelogin.asgi:application -k securelogin.workers.DynamicUvicornWorker --timeout 500
 ```
