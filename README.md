@@ -50,7 +50,7 @@ python manage.py runserver
 ```
 
 and for the `Linux` and `Mac` users, type the following command
-```python
+```console
 gunicorn securelogin.asgi:application -k securelogin.workers.DynamicUvicornWorker --timeout 500
 ```
 
