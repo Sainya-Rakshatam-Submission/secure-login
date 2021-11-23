@@ -13,6 +13,8 @@ This project addresses all the web vulnerabilities and implements login system i
 - Credentials Over Unencrypted Channel
 - Missing Brute-Force Protection
 - User Enumeration
+- Throttling Requests
+- Remote Code Execution
 
 ## **Hosting Guide**
 
