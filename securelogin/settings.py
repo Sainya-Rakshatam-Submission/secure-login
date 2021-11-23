@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "corsheaders",
+    "compressor",
 ]
 
 MIDDLEWARE = [
@@ -194,3 +195,7 @@ KEEP_COMMENTS_ON_MINIFYING = False
 
 SESSION_COOKIE_AGE = 1 * 60 * 60
 SESSION_COOKIE_AGE = True
+
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher'
+]
