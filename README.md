@@ -43,7 +43,10 @@ To compress the static files then type the following command in the console
 python manage.py collectcompress
 ```
 
-### 7. Now run the project
+### 7. Edit the CORS and ALLOWED_HOST header
+Make sure to edit the `CORS` and `ALLOWED_HOST` header, otherwise you won't be able to access the site from the desired attched domain. [Click here to goto the CORS and ALLOWED_HOST header](https://github.com/Sainya-Rakshatam-Submission/secure-login/blob/master/securelogin/settings.py#L172)
+
+### 8. Now run the project
 For the `windows` users, type the following command
 ```console
 python manage.py runserver
