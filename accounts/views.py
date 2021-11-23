@@ -6,7 +6,9 @@ from django.http import HttpResponsePermanentRedirect
 from django.conf import settings
 from django.contrib import messages
 from .forms import LoginForm
+import ast
 from django.contrib.auth import get_user_model
+from django.urls import reverse
 
 User = get_user_model()
 

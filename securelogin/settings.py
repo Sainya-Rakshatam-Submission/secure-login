@@ -70,7 +70,7 @@ if os.path.isfile(dotenv_file):
 
     PRODUCTION_SERVER = False
     DEBUG = ast.literal_eval(os.environ.get("DEBUG", "True").capitalize())
-    SECRET_KEY = 'django-insecure-5dv(%^a1!s%h1i7$2pem=2dy=7#4$f5pj1524rp=o-+#mz9h%g'
+    SECRET_KEY = '5dv(%^a1!s%h1i7$2pem=2dy=7#4$f5pj1524rp=o-+#mz9h%g'
     CACHE_MIDDLEWARE_SECONDS = 0
     LOCAL = True
 else:
@@ -194,7 +194,6 @@ HTML_MINIFY = True
 KEEP_COMMENTS_ON_MINIFYING = False
 
 SESSION_COOKIE_AGE = 1 * 60 * 60
-SESSION_COOKIE_AGE = True
 
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher'
