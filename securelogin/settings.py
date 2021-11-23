@@ -169,9 +169,11 @@ CORS_ALLOW_METHODS = [
     "GET",
     "POST",
 ]
-CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS = ALLOWED_HOSTS  = [
+ALLOWED_HOSTS = ['*']
+CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS  = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
+    "http://127.0.0.1:8000",    
 ]
 
 COMPRESS_ENABLED = ast.literal_eval(os.environ.get("COMPRESS_ENABLED", "True"))

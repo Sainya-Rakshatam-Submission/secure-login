@@ -18,7 +18,7 @@ User = get_user_model()
 def user_logout(request):
     logout(request)
     messages.success(request, "You have been successfully logged out!")
-    return HttpResponsePermanentRedirect(reverse("home"))
+    return HttpResponsePermanentRedirect(reverse("Home"))
 
 
 @sync_to_async
