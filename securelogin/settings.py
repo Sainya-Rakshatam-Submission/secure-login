@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 INSTALLED_APPS = [
     'main.apps.MainConfig',
+    "accounts.apps.AccountsConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -166,6 +167,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_METHODS = [
     "GET",
     "POST",
+]
+CORS_ALLOWED_ORIGINS = CSRF_TRUSTED_ORIGINS  = [
+    "http://localhost:8080",
+    "http://127.0.0.1:9000",
 ]
 
 COMPRESS_ENABLED = ast.literal_eval(os.environ.get("COMPRESS_ENABLED", "True"))
