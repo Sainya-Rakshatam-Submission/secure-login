@@ -4,8 +4,15 @@ This project addresses all the web vulnerabilities and implements login system i
 **Web vulnerabilities addressed**
 - Cross Site Forgery Request
 - Clickjacking
-- Sql Injection
-- XSS Injection
+- SQL/NoSQL/LDAP/XML Injection
+- XSS Attack
+- Response Manipulation
+- Sensitive Information Disclosure
+- Authentication Bypass
+- Parameter Pollution & Mass Assignment
+- Credentials Over Unencrypted Channel
+- Missing Brute-Force Protection
+- User Enumeration
 
 ## **Hosting Guide**
 
