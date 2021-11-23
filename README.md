@@ -54,3 +54,4 @@ and for the `Linux` and `Mac` users, type the following command
 gunicorn securelogin.asgi:application -k securelogin.workers.DynamicUvicornWorker --timeout 500
 ```
 
+Kamboom! The site is up on http://127.0.0.1:8000 in local environment, now the credentials that you have given while creating the superuser using the createsuperuser command.
