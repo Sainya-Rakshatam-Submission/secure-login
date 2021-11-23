@@ -63,6 +63,9 @@ python manage.py collectcompress
 ### 7. Edit the CORS and ALLOWED_HOST header
 Make sure to edit the `CORS` and `ALLOWED_HOST` header, otherwise you won't be able to access the site from the desired attched domain. [Click here to goto the CORS and ALLOWED_HOST header](https://github.com/Sainya-Rakshatam-Submission/secure-login/blob/master/securelogin/settings.py#L172)
 
+### 8. Edit the THROTTLING REQUESTS bumber
+Make sure to edit the `AXES_FAILURE_LIMIT` confiiguration, this is the max number of failed login attempts, Defaults to 5. [Click here to goto the THROTTLING REQUESTS configuration](https://github.com/Sainya-Ranakshetram-Submission/secure-login/blob/master/securelogin/settings.py#L215)
+
 ### 8. Now run the project
 For the `windows` users, run the following command
 ```console
