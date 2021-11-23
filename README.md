@@ -1,5 +1,5 @@
 # Secure Login Challenge
-This project addresses all the web vulnerabilities and implements login system in a securely way
+This project addresses all the web vulnerabilities and implements login system in a secure way
 ## **Hosting Guide**
 
 ### 1. Download the code
@@ -16,9 +16,18 @@ pip install virtualenv
 virtualenv env
 env/scripts/activate
 ```
+Now rename `example.env` to `.env` and now see this video on how to setup the `.env` file.
 
 ### 3. Setup the database
 If you are in local environment then the project will automatically use the `sqlite` unless speficied the database url in the `.env` file.
 Following `DATABASE URL`'s are supported [Click Here](https://github.com/jacobian/dj-database-url#url-schema)
 And then install its respective database connector module from `pypi`.
 If you are in `LOCAL` environment then no need to install the database connector module since it will be using sqlite :)
+
+### 4. Migrate the sql queries to the database
+Now in console type the following command
+```console
+python manage.py migrate
+```
+
+
