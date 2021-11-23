@@ -24,6 +24,7 @@ If you are in local environment then the project will automatically use the `sql
 Following `DATABASE URL`'s are supported [Click Here](https://github.com/jacobian/dj-database-url#url-schema)
 And then install its respective database connector module from `pypi`.
 If you are in `LOCAL` environment then no need to install the database connector module since it will be using sqlite :)
+[Click here for the video explanation](https://youtu.be/6iw5sA89gMo)
 
 ### 4. Migrate the sql queries to the database
 Now in console type the following command
