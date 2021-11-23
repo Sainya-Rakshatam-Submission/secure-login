@@ -59,3 +59,7 @@ gunicorn securelogin.asgi:application -k securelogin.workers.DynamicUvicornWorke
 ```
 
 Kamboom! The site is up on http://127.0.0.1:8000 in local environment, now the credentials that you have given while creating the superuser using the createsuperuser command.
+
+## Youtube Video Explaining all
+
+[![Secure Coding Challenge | Submission](http://img.youtube.com/vi/6iw5sA89gMo/0.jpg)](http://www.youtube.com/watch?v=6iw5sA89gMo "Secure Coding Challenge | Submission")
