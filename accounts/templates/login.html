@@ -75,7 +75,12 @@
             <img class="mb-4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57" loading="lazy">
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
-            {% for field in form %}
+            {% for message in messages %}
+            <div {% if message.tags %} class="alert alert-{{message.tags}} alert-dismissible fade show" {% endif %} role="alert">
+                {{message|safe}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %} {% for field in form %}
             <div class="form-floating">
                 {{ field }} {{ field.label_tag }}
             </div>
